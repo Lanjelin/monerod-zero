@@ -40,7 +40,7 @@ jobs:
 
           # Check if tag already exists
           if curl --silent --fail -H "Authorization: Bearer ${{ secrets.GH_TOKEN }}" \
-            "https://ghcr.io/v2/lanjelin/p2pool-zero/manifests/$TAG" > /dev/null; then
+            "https://ghcr.io/v2/lanjelin/monerod-zero/manifests/$TAG" > /dev/null; then
             echo "Image already exists for $TAG. Skipping build."
             exit 0
           fi
